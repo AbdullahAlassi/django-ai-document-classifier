@@ -103,12 +103,7 @@ python3 manage.py runserver
 ---
 
 ## 🧠 How the AI Works
-The application sends document data to a locally running **LLM (Ollama)** via REST API, which outputs a prediction for one of the following categories:
-
-🔹 Technology.  
-🔹 Finance.  
-🔹 Healthcare.  
-🔹 General.
+The application sends document data to a locally running **LLM (Ollama)** via REST API, which following a general categorisation based on the context.
 
 ---
 
