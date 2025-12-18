@@ -1,0 +1,36 @@
+# ===== Django / Python =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+db.sqlite3
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+.pytest_cache/
+.coverage
+htmlcov/
+.env
+.env.*
+venv/
+.venv/
+ENV/
+env/
+
+# ===== Django static/media (optional) =====
+staticfiles/
+media/
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.iml
+
+# ===== macOS =====
+.DS_Store
+
+# ===== Node (if ever added) =====
+node_modules/

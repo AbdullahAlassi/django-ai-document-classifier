@@ -1,0 +1,8 @@
+<h3>History</h3>
+
+
+{% for d in docs %}
+    <p><b>{{ d.title }}</b> → {{ d.predicted_category }}</p>
+{% empty %}
+    <p>No Documents yet.</p>
+{% endfor %}

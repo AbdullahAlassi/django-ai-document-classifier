@@ -1,0 +1,31 @@
+{% load static %}
+
+
+<script src= "https://unpkg.com/htmx.org@1.9.12"></script>
+<link rel="stylesheet" href="{% static 'analyzer/style.css' %}">
+
+
+<h2> 
+    AI Research Document Classifire
+</h2>
+
+<form 
+    hx-post="/"
+    hx-target="#history"
+    hx-swap="innerHTML"
+    method="post"
+    >
+
+    {% csrf_token %}
+    <input name="title" placeholder="Document title" required />
+    <br><br>
+    <textarea name="content" rows="6" placeholder="Paste document text" required></textarea> 
+    <br><br>
+    <button type="submit">Classify</button>
+</form>
+
+<hr>
+
+<div id="history">
+    {% include "_history.html" %}
+</div>
